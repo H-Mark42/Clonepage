@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        #hero {
+            background-color: #ffffff;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #content {
+            width: 60%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        #title {
+            font-size: 5.5rem;
+            line-height: 8rem;
+            font-weight: 700;
+        }
+
+        #content p {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            line-height: 2.5rem;
+            font-weight: 600;
+        }
+
+        #btn {
+            margin-top: 2rem;
+            background-color: black;
+            border-radius: 4rem;
+            color: white;
+            font-size: 2.2rem;
+            padding: 1rem 1.8rem;
+            width: 400px;
+            align-self: center;
+        }
+
+        #members {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            width: 400px;
+        }
+
+        .number {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.4rem;
+            animation: backg 5s linear infinite;
+        }
+        #flash{
+            margin-bottom: 1rem;
+            font-weight: 300;
+            font-size: 1.4rem;
+            animation: blink 1s linear infinite;
+        }
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        @keyframes backg{
+            0%{
+                background-color: black;
+                color: #ffffff;
+                border: 1px solid red;
+            }
+            50%{
+                background-color: aliceblue;
+                color: #151414;
+                border: 1px solid black;
+            }
+            100%{
+                background-color: #151414;
+                color: aliceblue;
+                border: 1px solid red;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hero">
+        <div id="content">
+            <span id="flash">Live Community Members 🤩</span>
+            <div id="members">
+                <div class="number">7</div>
+                <div class="number">1</div>
+                <div class="number">0</div>
+                <div class="number">7</div>
+                <div class="number">0</div>
+                <div class="number">4</div>
+            </div>
+            <h1 id="title">We make Future Developer 🚀</h1>
+            <p>Join 7,19,341+ LetsUpgrader's and become a Pro Developer 🔥</p>
+            <button id="btn">Start Learning</button>
+        </div>
+    </div>
+    <div class="content">
+
+
+    </div>
+</body>
+
+</html>
